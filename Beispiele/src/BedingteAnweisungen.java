@@ -8,6 +8,21 @@ public class BedingteAnweisungen {
     public static void main(String... args) {
         switchBeispiel();
         ifBeispiel();
+        elseBeispiel();
+    }
+
+    /**
+     * In dieser Methode wird durch einen {@link LogischeAusdrücke logischen Ausdruck} der Programmfluss verzweigt.
+     */
+    private static void elseBeispiel() {
+        System.out.println("Bist du ein Mensch? (J/N)");
+        Scanner sc = new Scanner(System.in);
+        char human = sc.next().charAt(0);
+        if (human == 'J' || human == 'j') {
+            System.out.println("Alles andere wäre sehr beunruhigend gewesen.");
+        } else {
+            System.out.println("Verstehst du mich nicht oder bist du ein Alien?");
+        }
     }
 
     /**
